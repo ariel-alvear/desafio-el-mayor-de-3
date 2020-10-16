@@ -7,10 +7,30 @@ input1 = ARGV[0]
 input2 = ARGV[1]
 input3 = ARGV[2]
 
-if input1 > input2 && input1 > input3
-  puts input1
-elsif input2 > input1 && input2 > input3
-  puts input2
-else input3 > input1 && input3 > input2
-  puts input3
+if input1 == input2 || input1 == input3 || input2 == input3
+  if input1 == input2
+    if input1 > input3
+      puts input1
+    else
+      puts input3
+    end
+  elsif input1 == input3
+    if input1 > input2
+      puts input1
+    else
+      puts input2
+    end
+  elsif input2 == input3
+    if input1 > input2
+      puts input1
+    else
+      puts input2
+    end
+  elsif input1 > input2 && input1 > input3
+    puts input1
+  elsif input2 > input1 && input2 > input3
+    puts input2
+  else input3 > input1 && input3 > input2
+    puts input3
+  end
 end
