@@ -7,7 +7,7 @@ input1 = ARGV[0]
 input2 = ARGV[1]
 input3 = ARGV[2]
 
-if input1 > input2 && input1 > input2
+if input1 > input2 && input1 > input3
   puts input1
 elsif input2 > input1 && input2 > input3
   puts input2
